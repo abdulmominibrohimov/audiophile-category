@@ -85,3 +85,49 @@ body {
 .card-content {
     max-width: 445px;
 }
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        width: 689px;
+        flex-direction: column;
+        text-align: center;
+        gap: 52px;
+    }
+    .card-wrapper:nth-child(even) {
+        flex-direction: column;
+    }
+    .card-img {
+        width: 689px;
+        height: 352px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .card-wrapper {
+        gap: 32px;
+    }
+    .card-img {
+        width: 327px;
+        height: 352px;
+    }
+    .badge {
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 24px;
+    }
+    .h2 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 100%;
+        margin-bottom: 24px;
+    }
+    .paragraph {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-bottom: 24px;
+    }
+}
