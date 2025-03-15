@@ -85,3 +85,41 @@ body {
 .card-content {
     max-width: 445px;
 }
+img {width: 560px;}
+
+@media (max-width: 767px) {
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card-wrapper:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 378px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        
+
+    }
+
+    .card-wrapper:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
